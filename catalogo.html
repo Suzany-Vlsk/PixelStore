@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Store | Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Pixel Store</h1>
+            <p>Seu jogo. Seu estilo.</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="atendimento.html">Atendimento</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="pagina-titulo">
+            <p class="tag">🛒 PIXEL STORE</p>
+            <h2>Catálogo de produtos</h2>
+            <p>
+                Encontre os equipamentos perfeitos para melhorar
+                seu setup e sua experiência nos jogos.
+            </p>
+        </section>
+
+        <section class="catalogo">
+
+            <div class="cards">
+
+                <article class="card card-roxo">
+
+                    <img src="imagens/mouse.webp" alt="Mouse Gamer">
+
+                    <div class="card-conteudo">
+                        <span class="categoria">GAMING</span>
+
+                        <h3>Mouse Gamer</h3>
+
+                        <p>
+                            Precisão e velocidade para melhorar
+                            seu desempenho durante as partidas.
+                        </p>
+
+                        <strong>R$ 250,00</strong>
+                    </div>
+
+                </article>
+
+                <article class="card card-azul">
+
+                    <img src="imagens/teclado.jpg" alt="Teclado Mecânico">
+
+                    <div class="card-conteudo">
+                        <span class="categoria">TECLADO</span>
+
+                        <h3>Teclado Mecânico</h3>
+
+                        <p>
+                            Teclas mecânicas para uma resposta
+                            rápida e confortável durante o jogo.
+                        </p>
+
+                        <strong>R$ 290,00</strong>
+                    </div>
+
+                </article>
+
+                <article class="card card-rosa">
+
+                    <img src="imagens/headset.jpg" alt="Headset">
+
+                    <div class="card-conteudo">
+                        <span class="categoria">ÁUDIO</span>
+
+                        <h3>Headset</h3>
+
+                        <p>
+                            Som imersivo e conforto para você
+                            aproveitar cada momento do jogo.
+                        </p>
+
+                        <strong>R$ 275,00</strong>
+                    </div>
+
+                </article>
+
+                <article class="card card-amarelo">
+
+                    <img src="imagens/controle.jpg" alt="Controle">
+
+                    <div class="card-conteudo">
+                        <span class="categoria">CONTROLE</span>
+
+                        <h3>Controle</h3>
+
+                        <p>
+                            Mais precisão e conforto para suas
+                            partidas favoritas.
+                        </p>
+
+                        <strong>R$ 399,90</strong>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="simulador">
+
+            <div class="titulo-secao">
+                <p class="tag">💰 SIMULADOR</p>
+                <h2>Simular compra</h2>
+                <p>
+                    Escolha um produto e informe a quantidade
+                    para calcular o valor da sua compra.
+                </p>
+            </div>
+
+            <div class="form-compra">
+
+                <div class="campo">
+                    <label for="produto">Produto:</label>
+
+                    <select id="produto">
+                        <option value="250">Mouse Gamer - R$ 250,00</option>
+                        <option value="290">Teclado Mecânico - R$ 290,00</option>
+                        <option value="275">Headset - R$ 275,00</option>
+                        <option value="399,90">Controle - R$ 399,90</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="quantidade">Quantidade:</label>
+
+                    <input
+                        type="number"
+                        id="quantidade"
+                        min="1"
+                        value="1"
+                    >
+                </div>
+
+                <button onclick="calcularTotal()">
+                    Calcular total
+                </button>
+
+            </div>
+
+            <div class="resultado-compra">
+
+                <p id="resultado">
+                    Escolha um produto e uma quantidade para calcular.
+                </p>
+
+                <p id="frete"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🎮 Tecnologia para deixar seu setup ainda melhor.</p>
+        <br>
+        <p>© 2026 Pixel Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

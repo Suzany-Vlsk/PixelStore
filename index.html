@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Store | Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Pixel Store</h1>
+            <p>Seu jogo. Seu estilo.</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="atendimento.html">Atendimento</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-text">
+                <p class="tag">🎮 TECNOLOGIA PARA GAMERS</p>
+
+                <h2>Seu setup.<br>Seu jogo.<br>Seu estilo.</h2>
+
+                <p>
+                    Encontre acessórios e equipamentos para deixar
+                    sua experiência nos jogos ainda melhor.
+                </p>
+
+                <a href="catalogo.html" class="botao">
+                    Ver catálogo →
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <img src="imagens/setup-gamer.jpg" alt="Setup gamer com computador e acessórios">
+            </div>
+
+        </section>
+
+        <section class="destaques" id="destaques">
+
+            <div class="titulo-secao">
+                <p>✨ ESCOLHAS DA PIXEL STORE</p>
+                <h2>Destaques da semana</h2>
+            </div>
+
+            <div class="cards">
+
+                <article class="card card-roxo">
+
+                    <img src="imagens/mouse.webp" alt="Mouse Gamer">
+
+                    <div class="card-conteudo">
+                        <span class="categoria">GAMING</span>
+
+                        <h3>Mouse Gamer</h3>
+
+                        <p>
+                            Precisão e velocidade para melhorar
+                            seu desempenho durante as partidas.
+                        </p>
+
+                        <strong>R$ 250,00</strong>
+                    </div>
+
+                </article>
+
+                <article class="card card-azul">
+
+                    <img src="imagens/headset.jpg" alt="Headset Gamer">
+
+                    <div class="card-conteudo">
+                        <span class="categoria">ÁUDIO</span>
+
+                        <h3>Headset</h3>
+
+                        <p>
+                            Som imersivo e conforto para você
+                            aproveitar cada momento do jogo.
+                        </p>
+
+                        <strong>R$ 275,00</strong>
+                    </div>
+
+                </article>
+
+                <article class="card card-rosa">
+
+                    <img src="imagens/controle.jpg" alt="Controle Gamer">
+
+                    <div class="card-conteudo">
+                        <span class="categoria">CONTROLE</span>
+
+                        <h3>Controle</h3>
+
+                        <p>
+                            Mais precisão e conforto para suas
+                            partidas favoritas.
+                        </p>
+
+                        <strong>R$ 399,90</strong>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="boas-vindas">
+
+            <div>
+                <p class="tag">👋 BEM-VINDO À PIXEL STORE</p>
+
+                <h2>Pronto para começar?</h2>
+
+                <p>
+                    Digite seu nome para entrar na loja.
+                </p>
+            </div>
+
+            <div class="entrada-nome">
+
+                <label for="nome">Seu nome:</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                >
+
+                <button onclick="entrarNaLoja()">
+                    Entrar na loja
+                </button>
+
+                <p id="mensagem-boas-vindas"></p>
+
+            </div>
+
+        </section>
+
+        <section class="promocao" id="promocao">
+
+            <div>
+                <p class="tag">🔥 OFERTA ESPECIAL</p>
+
+                <h2>Quer ativar uma surpresa?</h2>
+
+                <p>
+                    Ative o modo promoção e veja a página mudar.
+                </p>
+            </div>
+
+            <button onclick="ativarPromocao()">
+                Ativar modo promoção
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🎮 Tecnologia para deixar seu setup ainda melhor.</p>
+        <br>
+        <p>© 2026 Pixel Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

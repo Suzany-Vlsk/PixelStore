@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Store | Atendimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Pixel Store</h1>
+            <p>Seu jogo. Seu estilo.</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="atendimento.html">Atendimento</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="pagina-titulo">
+            <p class="tag">💬 PIXEL STORE</p>
+
+            <h2>Central de atendimento</h2>
+
+            <p>
+                Precisa de ajuda? Envie sua mensagem para nossa equipe.
+                Estamos prontos para ajudar você.
+            </p>
+        </section>
+
+        <section class="atendimento">
+
+            <fieldset id="formulario-atendimento">
+
+                <legend>💜 Fale com a Pixel Store</legend>
+
+                <div class="campo">
+                    <label for="nome-atendimento">Nome:</label>
+
+                    <input
+                        type="text"
+                        id="nome-atendimento"
+                        placeholder="Digite seu nome"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="idade">Idade:</label>
+
+                    <input
+                        type="number"
+                        id="idade"
+                        min="1"
+                        placeholder="Digite sua idade"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto:</label>
+
+                    <select id="assunto">
+                        <option value="duvida">Dúvida sobre produto</option>
+                        <option value="problema">Problema com compra</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+
+                    <textarea
+                        id="mensagem"
+                        rows="6"
+                        placeholder="Digite sua mensagem"
+                    ></textarea>
+                </div>
+
+                <div class="botoes-atendimento">
+
+                    <button onclick="enviarMensagem()">
+                        Enviar mensagem
+                    </button>
+
+                    <button onclick="destacarAtendimento()">
+                        Destacar atendimento
+                    </button>
+
+                </div>
+
+                <div class="respostas">
+
+                    <p id="resposta-atendimento"></p>
+
+                    <p id="resposta-idade"></p>
+
+                </div>
+
+            </fieldset>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🎮 Tecnologia para deixar seu setup ainda melhor.</p>
+        <br>
+        <p>© 2026 Pixel Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
