@@ -1,7 +1,5 @@
 
-// ==========================================
-// PÁGINA INICIAL - SAUDAÇÃO
-// ==========================================
+// SAUDAÇÃO
 
 function entrarNaLoja() {
 
@@ -22,9 +20,7 @@ function entrarNaLoja() {
 }
 
 
-// ==========================================
-// PÁGINA INICIAL - MODO PROMOÇÃO
-// ==========================================
+// PROMOÇÃO
 
 function ativarPromocao() {
 
@@ -49,9 +45,7 @@ function ativarPromocao() {
 }
 
 
-// ==========================================
-// CATÁLOGO - CALCULAR COMPRA
-// ==========================================
+// CALCULAR COMPRA
 
 function calcularTotal() {
 
@@ -68,9 +62,7 @@ function calcularTotal() {
     // Calculando o valor inicial
     let total = preco * quantidade;
 
-    // ======================================
     // DESCONTO
-    // ======================================
 
     let desconto = 0;
 
@@ -92,9 +84,7 @@ function calcularTotal() {
     }
 
 
-    // ======================================
     // FRETE
-    // ======================================
 
     if (total >= 500) {
 
@@ -113,9 +103,7 @@ function calcularTotal() {
 }
 
 
-// ==========================================
 // ATENDIMENTO - ENVIAR MENSAGEM
-// ==========================================
 
 function enviarMensagem() {
 
@@ -126,9 +114,7 @@ function enviarMensagem() {
     let respostaIdade = document.getElementById("resposta-idade");
 
 
-    // ======================================
     // VALIDAÇÃO DO NOME
-    // ======================================
 
     if (nome === "") {
 
@@ -147,9 +133,7 @@ function enviarMensagem() {
     }
 
 
-    // ======================================
-    // RESPOSTA BASEADA NA IDADE
-    // ======================================
+    // RESPOSTA CONFORME A IDADE
 
     if (idade >= 18) {
 
@@ -170,9 +154,7 @@ function enviarMensagem() {
 }
 
 
-// ==========================================
 // ATENDIMENTO - DESTACAR FORMULÁRIO
-// ==========================================
 
 function destacarAtendimento() {
 
