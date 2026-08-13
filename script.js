@@ -1,8 +1,3 @@
-//
-// PIXEL STORE
-// script.js
-//
-
 
 // ==========================================
 // PÁGINA INICIAL - SAUDAÇÃO
