@@ -388,6 +388,7 @@ button:active {
 
 .form-compra button {
     min-height: 47px;
+    margin-bottom: 0;
 }
 
 .resultado-compra {
